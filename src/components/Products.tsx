@@ -19,7 +19,7 @@ export function Products() {
       name: '230kV Substations',
       description: 'High voltage substations for regional power distribution and industrial power systems',
       specs: ['Turnkey execution', 'Civil & electrical works', 'Automation systems', 'Grid interconnection'],
-      image: 'https://images.unsplash.com/photo-1581092918484-8313e1f151db?w=800&h=600&fit=crop',
+       image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&h=600&fit=crop',
     },
     {
       name: '110kV & 66kV Substations',
