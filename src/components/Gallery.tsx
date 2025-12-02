@@ -43,7 +43,7 @@ export function Gallery() {
       description: 'Turnkey execution of 230kV AIS substation with 3 incoming and 5 outgoing feeders. Complete civil, electrical, and T&C works delivered on schedule with zero safety incidents.',
       location: 'Tamil Nadu',
       year: '2021',
-      image: 'https://unsplash.com/photos/a-black-and-white-photo-of-a-power-plant-ZNDQpkA41XE',
+      image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&h=600&fit=crop',
       color: 'from-green-500 to-green-700',
     },
     {

@@ -101,7 +101,7 @@ export function WhyChooseUs() {
       ],
       stats: { value: 'Class I', label: 'TNEB Certified' },
       color: 'from-red-500/20 to-red-600/20',
-      image: 'https://unsplash.com/photos/a-black-and-white-photo-of-a-power-plant-ZNDQpkA41XE',
+      image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&h=600&fit=crop',
     },
     {
       icon: Handshake,
