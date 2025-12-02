@@ -38,7 +38,7 @@ export function Certifications() {
       description: 'Certified contractor for Chennai Metropolitan Water Supply and Sewerage Board infrastructure projects',
       year: 'Active',
       color: 'from-purple-500/20 to-purple-600/20',
-      image: 'https://images.unsplash.com/photo-1587537093661-e3c5316fbd80?w=800&h=600&fit=crop',
+      image: 'https://unsplash.com/photos/a-black-and-white-photo-of-a-power-plant-ZNDQpkA41XE',
     },
     {
       icon: Medal,

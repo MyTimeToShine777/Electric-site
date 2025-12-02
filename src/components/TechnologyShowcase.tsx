@@ -60,7 +60,7 @@ export function TechnologyShowcase() {
       ],
       voltageRange: '33kV to 400kV',
       applications: 'Substations, Distribution networks',
-      image: 'https://images.unsplash.com/photo-1587537093661-e3c5316fbd80?w=800&h=600&fit=crop',
+      image: 'https://unsplash.com/photos/a-black-and-white-photo-of-a-power-plant-ZNDQpkA41XE',
       color: 'from-purple-500 to-purple-600',
     },
     {
