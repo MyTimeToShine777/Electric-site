@@ -226,17 +226,17 @@ export function WhyChooseUs() {
   const currentAdvantage = advantages[currentIndex]
 
   return (
-    <section id="why-choose-us" className="py-12 lg:py-16 bg-white relative overflow-hidden">
+    <section id="why-choose-us" className="py-16 lg:py-20 bg-white relative overflow-hidden">
       <div className="absolute top-0 left-0 w-1/2 h-1/2 bg-[#3B82F6]/5 rounded-full blur-[120px]"></div>
       <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-[#F97316]/5 rounded-full blur-[120px]"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div ref={titleRef} className="text-center mb-10">
-          <span className="inline-block px-4 py-2 text-base font-bold text-[#3B82F6] bg-[#3B82F6]/10 rounded-full mb-4">Our Strengths</span>
-          <h2 className="text-4xl sm:text-5xl font-bold text-[#0F172A] mb-4">
+          <span className="inline-block px-4 py-2 text-sm font-bold text-[#3B82F6] bg-[#3B82F6]/10 rounded-full mb-4">Our Strengths</span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#0F172A] mb-4">
             Why Choose MASS POWER SOLUTIONS?
           </h2>
-          <p className="text-lg text-[#64748B] max-w-3xl mx-auto">
+          <p className="text-base text-[#64748B] max-w-3xl mx-auto">
             Discover what makes us the preferred partner for power utilities and independent power 
             producers across Tamil Nadu. Our unique combination of experience, expertise, and commitment 
             sets us apart.

@@ -243,30 +243,30 @@ export function Gallery() {
   }
 
   return (
-    <section id="gallery" className="py-12 lg:py-16 bg-gradient-to-b from-white to-[#F8FAFC]">
+    <section id="gallery" className="py-16 lg:py-20 bg-gradient-to-b from-white to-[#F8FAFC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div ref={titleRef} className="text-center mb-10">
-          <span className="inline-block px-4 py-2 bg-[#3B82F6]/10 text-[#3B82F6] font-bold rounded-full text-base mb-4">
+        <div ref={titleRef} className="text-center mb-12">
+          <span className="inline-block px-4 py-2 bg-[#3B82F6]/10 text-[#3B82F6] font-bold rounded-full text-sm mb-4">
             Project Gallery
           </span>
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-[#0F172A]">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-[#0F172A]">
             Our Projects & Infrastructure
           </h2>
-          <p className="text-lg text-[#64748B] max-w-3xl mx-auto">
+          <p className="text-base text-[#64748B] max-w-3xl mx-auto">
             Showcasing our expertise in EHV substation and transmission line projects across Tamil Nadu. 
             Each project demonstrates our commitment to quality, safety, and on-time delivery.
           </p>
         </div>
 
-        <div ref={infoCardsRef} className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+        <div ref={infoCardsRef} className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
           {infoCards.map((card) => (
             <Card key={card.title} className={`relative overflow-hidden p-6 text-center hover:shadow-xl transition-all duration-500 hover:-translate-y-1 border-0 bg-gradient-to-br ${card.color}`}>
               <div className="absolute top-0 right-0 w-20 h-20 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
               <div className="relative z-10">
-                <div className="w-14 h-14 rounded-xl bg-white/15 flex items-center justify-center mx-auto mb-3">
+                <div className="w-14 h-14 rounded-xl bg-white/15 flex items-center justify-center mx-auto mb-4">
                   <card.icon size={28} className="text-white" weight="duotone" />
                 </div>
-                <div className="text-3xl font-bold text-white mb-1">{card.value}</div>
+                <div className="text-3xl font-bold text-white mb-2">{card.value}</div>
                 <div className="font-semibold text-white/90 text-base mb-1">{card.title}</div>
                 <div className="text-sm text-white/70">{card.description}</div>
               </div>

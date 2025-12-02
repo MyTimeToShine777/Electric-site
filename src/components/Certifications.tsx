@@ -114,17 +114,17 @@ export function Certifications() {
   const activeCert = certifications[activeIndex]
 
   return (
-    <section id="certifications" className="py-12 lg:py-16 bg-white relative overflow-hidden">
+    <section id="certifications" className="py-16 lg:py-20 bg-white relative overflow-hidden">
       <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-[#3B82F6]/5 rounded-full blur-[100px]"></div>
       <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-[#F97316]/5 rounded-full blur-[100px]"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div ref={titleRef} className="text-center mb-10">
-          <span className="inline-block px-4 py-2 bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] text-white font-bold rounded-full text-base mb-4 shadow-lg shadow-[#3B82F6]/25">Certifications & Licenses</span>
-          <h2 className="text-4xl sm:text-5xl font-bold text-[#0F172A] mb-4">
+          <span className="inline-block px-4 py-2 bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#3B82F6]/25">Certifications & Licenses</span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#0F172A] mb-4">
             Certified Excellence
           </h2>
-          <p className="text-lg text-[#64748B] max-w-3xl mx-auto">
+          <p className="text-base text-[#64748B] max-w-3xl mx-auto">
             Recognized certifications and licenses demonstrating our commitment to quality, 
             safety, and regulatory compliance in power infrastructure construction.
           </p>

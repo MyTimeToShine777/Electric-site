@@ -181,17 +181,17 @@ export function TechnologyShowcase() {
   const currentTech = technologies[currentIndex]
 
   return (
-    <section id="technology" className="py-12 lg:py-16 bg-[#F8FAFC] relative overflow-hidden">
+    <section id="technology" className="py-16 lg:py-20 bg-[#F8FAFC] relative overflow-hidden">
       <div className="absolute top-0 left-0 w-96 h-96 bg-[#3B82F6]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#F97316]/5 rounded-full blur-3xl"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div ref={titleRef} className="text-center mb-12">
-          <span className="inline-block px-4 py-2 text-base font-bold text-white bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] rounded-full mb-4 shadow-lg shadow-[#3B82F6]/25">Technology & Equipment</span>
-          <h2 className="text-4xl sm:text-5xl font-bold text-[#0F172A] mb-4">
+        <div ref={titleRef} className="text-center mb-10">
+          <span className="inline-block px-4 py-2 text-sm font-bold text-white bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] rounded-full mb-4 shadow-lg shadow-[#3B82F6]/25">Technology & Equipment</span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#0F172A] mb-4">
             Advanced Power Infrastructure Solutions
           </h2>
-          <p className="text-lg text-[#64748B] max-w-3xl mx-auto">
+          <p className="text-base text-[#64748B] max-w-3xl mx-auto">
             We deploy cutting-edge equipment and technologies from leading global manufacturers, 
             ensuring reliable and efficient power infrastructure installations.
           </p>

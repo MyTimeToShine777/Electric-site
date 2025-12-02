@@ -141,18 +141,18 @@ export function Services() {
   }
 
   return (
-    <section id="services" className="py-12 lg:py-16 bg-white relative overflow-hidden">
+    <section id="services" className="py-16 lg:py-20 bg-white relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#3B82F6]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#F97316]/5 rounded-full blur-3xl"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div ref={titleRef} className="text-center mb-10">
-          <span className="inline-block px-4 py-2 bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] text-white font-bold rounded-full text-base mb-4 shadow-lg shadow-[#3B82F6]/25">
+          <span className="inline-block px-4 py-2 bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#3B82F6]/25">
             Our Services
           </span>
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-[#0F172A]">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-[#0F172A]">
             Comprehensive Power Infrastructure Solutions
           </h2>
-          <p className="text-lg text-[#64748B] max-w-3xl mx-auto">
+          <p className="text-base text-[#64748B] max-w-3xl mx-auto">
             From initial design to final commissioning and ongoing maintenance, we provide complete turnkey 
             solutions for EHV substations and transmission line projects.
           </p>
@@ -164,52 +164,52 @@ export function Services() {
           ))}
         </div>
 
-        <div ref={bottomCardsRef} className="grid md:grid-cols-2 gap-6">
-          <Card className="p-8 bg-white border border-[#E2E8F0] hover:shadow-lg transition-all">
-            <h3 className="text-2xl font-bold mb-5 text-[#0F172A]">Why Choose MASS POWER SOLUTIONS?</h3>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <div className="w-6 h-6 rounded-full bg-[#10B981] flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <span className="text-white text-sm font-bold">✓</span>
+        <div ref={bottomCardsRef} className="grid md:grid-cols-2 gap-8">
+          <Card className="p-10 bg-white border border-[#E2E8F0] hover:shadow-lg transition-all">
+            <h3 className="text-2xl font-bold mb-6 text-[#0F172A]">Why Choose MASS POWER SOLUTIONS?</h3>
+            <ul className="space-y-5">
+              <li className="flex items-start gap-4">
+                <div className="w-7 h-7 rounded-full bg-[#10B981] flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <span className="text-white text-base font-bold">✓</span>
                 </div>
                 <div>
-                  <div className="font-semibold text-[#0F172A] text-base">TNEB Class I Certified</div>
-                  <div className="text-sm text-[#64748B]">State Power Utility certified contractor for EHV works</div>
+                  <div className="font-semibold text-[#0F172A] text-lg">TNEB Class I Certified</div>
+                  <div className="text-base text-[#64748B]">State Power Utility certified contractor for EHV works</div>
                 </div>
               </li>
-              <li className="flex items-start gap-3">
-                <div className="w-6 h-6 rounded-full bg-[#10B981] flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <span className="text-white text-sm font-bold">✓</span>
+              <li className="flex items-start gap-4">
+                <div className="w-7 h-7 rounded-full bg-[#10B981] flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <span className="text-white text-base font-bold">✓</span>
                 </div>
                 <div>
-                  <div className="font-semibold text-[#0F172A] text-base">ESA Grade License Holder</div>
-                  <div className="text-sm text-[#64748B]">ESA:530 license by Electrical Licensing Board of Tamil Nadu</div>
+                  <div className="font-semibold text-[#0F172A] text-lg">ESA Grade License Holder</div>
+                  <div className="text-base text-[#64748B]">ESA:530 license by Electrical Licensing Board of Tamil Nadu</div>
                 </div>
               </li>
-              <li className="flex items-start gap-3">
-                <div className="w-6 h-6 rounded-full bg-[#10B981] flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <span className="text-white text-sm font-bold">✓</span>
+              <li className="flex items-start gap-4">
+                <div className="w-7 h-7 rounded-full bg-[#10B981] flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <span className="text-white text-base font-bold">✓</span>
                 </div>
                 <div>
-                  <div className="font-semibold text-[#0F172A] text-base">300+ Skilled Professionals</div>
-                  <div className="text-sm text-[#64748B]">Dedicated in-house team for all project aspects</div>
+                  <div className="font-semibold text-[#0F172A] text-lg">300+ Skilled Professionals</div>
+                  <div className="text-base text-[#64748B]">Dedicated in-house team for all project aspects</div>
                 </div>
               </li>
-              <li className="flex items-start gap-3">
-                <div className="w-6 h-6 rounded-full bg-[#10B981] flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <span className="text-white text-sm font-bold">✓</span>
+              <li className="flex items-start gap-4">
+                <div className="w-7 h-7 rounded-full bg-[#10B981] flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <span className="text-white text-base font-bold">✓</span>
                 </div>
                 <div>
-                  <div className="font-semibold text-[#0F172A] text-base">Strong Supplier Network</div>
-                  <div className="text-sm text-[#64748B]">Ensuring timely material supply and cost efficiency</div>
+                  <div className="font-semibold text-[#0F172A] text-lg">Strong Supplier Network</div>
+                  <div className="text-base text-[#64748B]">Ensuring timely material supply and cost efficiency</div>
                 </div>
               </li>
             </ul>
           </Card>
 
-          <Card className="p-8 bg-white border border-[#E2E8F0] hover:shadow-lg transition-all">
-            <h3 className="text-2xl font-bold mb-5 text-[#0F172A]">Sectors We Serve</h3>
-            <div className="grid grid-cols-2 gap-4">
+          <Card className="p-10 bg-white border border-[#E2E8F0] hover:shadow-lg transition-all">
+            <h3 className="text-2xl font-bold mb-6 text-[#0F172A]">Sectors We Serve</h3>
+            <div className="grid grid-cols-2 gap-5">
               {[
                 'Power Utilities',
                 'Independent Power Producers',
@@ -220,9 +220,9 @@ export function Services() {
                 'Distribution Networks',
                 'Transmission Infrastructure',
               ].map((sector) => (
-                <div key={sector} className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-[#F97316]"></div>
-                  <span className="text-base text-[#0F172A]">{sector}</span>
+                <div key={sector} className="flex items-center gap-3">
+                  <div className="w-2.5 h-2.5 rounded-full bg-[#F97316]"></div>
+                  <span className="text-lg text-[#0F172A]">{sector}</span>
                 </div>
               ))}
             </div>

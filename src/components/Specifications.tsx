@@ -174,16 +174,16 @@ export function Specifications() {
   }
 
   return (
-    <section id="specifications" className="py-12 lg:py-16 bg-[#F8FAFC] relative overflow-hidden">
+    <section id="specifications" className="py-16 lg:py-20 bg-[#F8FAFC] relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#3B82F6]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#F97316]/5 rounded-full blur-3xl"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div ref={titleRef} className="text-center mb-10">
-          <span className="inline-block px-4 py-2 bg-gradient-to-r from-[#10B981] to-[#059669] text-white font-bold rounded-full text-base mb-4 shadow-lg shadow-[#10B981]/25">Execution Excellence</span>
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-[#0F172A]">
+          <span className="inline-block px-4 py-2 bg-gradient-to-r from-[#10B981] to-[#059669] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#10B981]/25">Execution Excellence</span>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-[#0F172A]">
             Project Execution Capabilities
           </h2>
-          <p className="text-lg text-[#64748B] max-w-3xl mx-auto">
+          <p className="text-base text-[#64748B] max-w-3xl mx-auto">
             Comprehensive in-house capabilities covering all aspects of EHV substation and 
             transmission line project execution with focus on quality and safety.
           </p>
@@ -195,13 +195,13 @@ export function Specifications() {
           ))}
         </div>
 
-        <div ref={qualityCardsRef} className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+        <div ref={qualityCardsRef} className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {qualityFeatures.map((feature, index) => (
             <Card key={feature.title} className={`p-6 text-center hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border-0 bg-gradient-to-br ${feature.color} group`}>
               <div className="w-16 h-16 rounded-full bg-white/15 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <feature.icon size={32} className="text-white" weight="duotone" />
               </div>
-              <h3 className="font-bold text-xl mb-2 text-white">{feature.title}</h3>
+              <h3 className="font-bold text-lg mb-2 text-white">{feature.title}</h3>
               <p className="text-base text-white/85 leading-relaxed">{feature.description}</p>
             </Card>
           ))}
@@ -212,10 +212,10 @@ export function Specifications() {
           <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#F97316]/20 rounded-full blur-3xl"></div>
           <div className="relative z-10 grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-3xl lg:text-4xl font-bold mb-4">
+              <h3 className="text-2xl lg:text-3xl font-bold mb-4">
                 Committed to Excellence
               </h3>
-              <p className="text-lg text-white/85 leading-relaxed mb-6">
+              <p className="text-base text-white/85 leading-relaxed mb-6">
                 Our 30 years of experience, combined with a dedicated team of 300+ professionals, 
                 ensures every project is delivered with the highest standards of quality, safety, 
                 and reliability. We maintain strong relationships with TNEB/CEIG for seamless project execution.
@@ -234,20 +234,20 @@ export function Specifications() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5 text-center border border-white/10 hover:bg-white/15 transition-colors group">
-                <div className="text-4xl lg:text-5xl font-bold mb-2 text-[#3B82F6] group-hover:scale-110 transition-transform">100%</div>
-                <div className="text-white/80 text-base">Quality Tested</div>
+                <div className="text-3xl lg:text-4xl font-bold mb-2 text-[#3B82F6] group-hover:scale-110 transition-transform">100%</div>
+                <div className="text-white/80 text-sm">Quality Tested</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5 text-center border border-white/10 hover:bg-white/15 transition-colors group">
-                <div className="text-4xl lg:text-5xl font-bold mb-2 text-[#10B981] group-hover:scale-110 transition-transform">On-Time</div>
-                <div className="text-white/80 text-base">Delivery Focus</div>
+                <div className="text-3xl lg:text-4xl font-bold mb-2 text-[#10B981] group-hover:scale-110 transition-transform">On-Time</div>
+                <div className="text-white/80 text-sm">Delivery Focus</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5 text-center border border-white/10 hover:bg-white/15 transition-colors group">
-                <div className="text-4xl lg:text-5xl font-bold mb-2 text-[#F97316] group-hover:scale-110 transition-transform">300+</div>
-                <div className="text-white/80 text-base">Team Members</div>
+                <div className="text-3xl lg:text-4xl font-bold mb-2 text-[#F97316] group-hover:scale-110 transition-transform">300+</div>
+                <div className="text-white/80 text-sm">Team Members</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5 text-center border border-white/10 hover:bg-white/15 transition-colors group">
-                <div className="text-4xl lg:text-5xl font-bold mb-2 text-[#3B82F6] group-hover:scale-110 transition-transform">Zero</div>
-                <div className="text-white/80 text-base">Compromise</div>
+                <div className="text-3xl lg:text-4xl font-bold mb-2 text-[#3B82F6] group-hover:scale-110 transition-transform">Zero</div>
+                <div className="text-white/80 text-sm">Compromise</div>
               </div>
             </div>
           </div>

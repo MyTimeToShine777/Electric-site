@@ -110,17 +110,17 @@ export function Testimonials() {
   const activeTestimonial = testimonials[currentSlide]
 
   return (
-    <section id="testimonials" className="py-12 lg:py-16 bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] relative overflow-hidden">
+    <section id="testimonials" className="py-16 lg:py-20 bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] relative overflow-hidden">
       <div className="absolute top-0 left-0 w-1/2 h-1/2 bg-[#3B82F6]/10 rounded-full blur-[150px]"></div>
       <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-[#F97316]/10 rounded-full blur-[150px]"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div ref={titleRef} className="text-center mb-10">
-          <span className="inline-block px-4 py-2 bg-gradient-to-r from-[#F97316] to-[#EA580C] text-white font-bold rounded-full text-base mb-4 shadow-lg shadow-[#F97316]/25">Client Testimonials</span>
-          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
+          <span className="inline-block px-4 py-2 bg-gradient-to-r from-[#F97316] to-[#EA580C] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#F97316]/25">Client Testimonials</span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             What Our Clients Say
           </h2>
-          <p className="text-lg text-white/80 max-w-3xl mx-auto">
+          <p className="text-base text-white/80 max-w-3xl mx-auto">
             Trusted by power utilities, independent power producers, and industrial clients 
             for delivering exceptional EHV infrastructure projects across Tamil Nadu.
           </p>
