@@ -63,6 +63,9 @@ export function Testimonials() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
+      // Ensure element is visible first
+      gsap.set(titleRef.current, { opacity: 1 })
+
       gsap.from(titleRef.current, {
         opacity: 0,
         y: 30,
@@ -70,7 +73,7 @@ export function Testimonials() {
         ease: 'power2.out',
         scrollTrigger: {
           trigger: titleRef.current,
-          start: 'top 80%',
+          start: 'top 85%',
         },
       })
     })
@@ -107,56 +110,56 @@ export function Testimonials() {
   const activeTestimonial = testimonials[currentSlide]
 
   return (
-    <section id="testimonials" className="py-20 lg:py-28 bg-background relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-1/3 h-1/3 bg-primary/5 rounded-full blur-[100px]"></div>
-      <div className="absolute bottom-0 right-0 w-1/3 h-1/3 bg-accent/5 rounded-full blur-[100px]"></div>
+    <section id="testimonials" className="py-12 lg:py-16 bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-1/2 h-1/2 bg-[#3B82F6]/10 rounded-full blur-[150px]"></div>
+      <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-[#F97316]/10 rounded-full blur-[150px]"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div ref={titleRef} className="text-center mb-16">
-          <Badge variant="outline" className="mb-4">Client Testimonials</Badge>
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+        <div ref={titleRef} className="text-center mb-10">
+          <span className="inline-block px-4 py-2 bg-gradient-to-r from-[#F97316] to-[#EA580C] text-white font-bold rounded-full text-base mb-4 shadow-lg shadow-[#F97316]/25">Client Testimonials</span>
+          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
             What Our Clients Say
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-white/80 max-w-3xl mx-auto">
             Trusted by power utilities, independent power producers, and industrial clients 
             for delivering exceptional EHV infrastructure projects across Tamil Nadu.
           </p>
         </div>
 
         <div className="max-w-5xl mx-auto">
-          <Card className="overflow-hidden shadow-2xl">
-            <div className="grid lg:grid-cols-5 gap-8 p-8 lg:p-12">
+          <Card className="overflow-hidden shadow-2xl border-0 bg-white">
+            <div className="grid lg:grid-cols-5 gap-6 p-6 lg:p-10">
               <div className="lg:col-span-2 flex flex-col items-center lg:items-start">
-                <div className="relative mb-6">
-                  <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-primary/20">
+                <div className="relative mb-5">
+                  <div className="w-28 h-28 rounded-full overflow-hidden ring-4 ring-[#3B82F6] shadow-xl">
                     <img
                       src={activeTestimonial.image}
                       alt={activeTestimonial.name}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-lg">
-                    <Quotes size={24} className="text-primary-foreground" weight="fill" />
+                  <div className="absolute -bottom-2 -right-2 w-10 h-10 bg-gradient-to-r from-[#F97316] to-[#EA580C] rounded-full flex items-center justify-center shadow-lg">
+                    <Quotes size={20} className="text-white" weight="fill" />
                   </div>
                 </div>
 
                 <div className="text-center lg:text-left">
-                  <h3 className="text-xl font-bold mb-1">{activeTestimonial.name}</h3>
-                  <p className="text-sm text-primary font-medium mb-1">{activeTestimonial.role}</p>
-                  <p className="text-sm text-muted-foreground mb-3">{activeTestimonial.company}</p>
-                  <div className="flex gap-1 justify-center lg:justify-start mb-4">
+                  <h3 className="text-lg font-bold text-[#0F172A] mb-1">{activeTestimonial.name}</h3>
+                  <p className="text-sm text-[#3B82F6] font-medium mb-1">{activeTestimonial.role}</p>
+                  <p className="text-sm text-[#64748B] mb-3">{activeTestimonial.company}</p>
+                  <div className="flex gap-1 justify-center lg:justify-start mb-3">
                     {Array.from({ length: activeTestimonial.rating }).map((_, i) => (
-                      <Star key={i} size={18} weight="fill" className="text-accent" />
+                      <Star key={i} size={16} weight="fill" className="text-[#F97316]" />
                     ))}
                   </div>
-                  <Badge variant="outline" className="text-xs">
+                  <span className="inline-block px-3 py-1.5 text-xs font-semibold text-white bg-gradient-to-r from-[#0F172A] to-[#334155] rounded-full shadow">
                     {activeTestimonial.project}
-                  </Badge>
+                  </span>
                 </div>
               </div>
 
               <div ref={slidesRef} className="lg:col-span-3 flex flex-col justify-center" key={currentSlide}>
-                <p className="text-lg text-muted-foreground leading-relaxed italic mb-6">
+                <p className="text-base text-[#64748B] leading-relaxed italic mb-5">
                   "{activeTestimonial.text}"
                 </p>
 
@@ -167,7 +170,7 @@ export function Testimonials() {
                         key={index}
                         onClick={() => setCurrentSlide(index)}
                         className={`h-2 rounded-full transition-all duration-300 ${
-                          index === currentSlide ? 'w-8 bg-primary' : 'w-2 bg-border hover:bg-primary/50'
+                          index === currentSlide ? 'w-8 bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8]' : 'w-2 bg-[#E2E8F0] hover:bg-[#3B82F6]/50'
                         }`}
                         aria-label={`View testimonial ${index + 1}`}
                       />
@@ -179,7 +182,7 @@ export function Testimonials() {
                       variant="outline"
                       size="icon"
                       onClick={prevSlide}
-                      className="rounded-full"
+                      className="rounded-full border-[#3B82F6]/30 hover:bg-[#3B82F6]/10 hover:border-[#3B82F6]"
                     >
                       <CaretLeft size={20} />
                     </Button>
@@ -187,7 +190,7 @@ export function Testimonials() {
                       variant="outline"
                       size="icon"
                       onClick={nextSlide}
-                      className="rounded-full"
+                      className="rounded-full border-[#3B82F6]/30 hover:bg-[#3B82F6]/10 hover:border-[#3B82F6]"
                     >
                       <CaretRight size={20} />
                     </Button>
@@ -198,22 +201,22 @@ export function Testimonials() {
           </Card>
         </div>
 
-        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <Card className="p-6 text-center hover:shadow-lg transition-all">
-            <div className="text-3xl font-bold text-primary mb-2">50+</div>
-            <div className="text-sm text-muted-foreground">Completed Projects</div>
+        <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <Card className="p-5 text-center hover:shadow-xl hover:-translate-y-1 transition-all border-0 bg-gradient-to-br from-[#3B82F6] to-[#1D4ED8] group">
+            <div className="text-3xl font-bold text-white mb-1 group-hover:scale-110 transition-transform">50+</div>
+            <div className="text-sm text-white/80">Completed Projects</div>
           </Card>
-          <Card className="p-6 text-center hover:shadow-lg transition-all">
-            <div className="text-3xl font-bold text-accent mb-2">98%</div>
-            <div className="text-sm text-muted-foreground">Client Satisfaction</div>
+          <Card className="p-5 text-center hover:shadow-xl hover:-translate-y-1 transition-all border-0 bg-gradient-to-br from-[#F97316] to-[#EA580C] group">
+            <div className="text-3xl font-bold text-white mb-1 group-hover:scale-110 transition-transform">98%</div>
+            <div className="text-sm text-white/80">Client Satisfaction</div>
           </Card>
-          <Card className="p-6 text-center hover:shadow-lg transition-all">
-            <div className="text-3xl font-bold text-secondary mb-2">100%</div>
-            <div className="text-sm text-muted-foreground">On-Time Delivery</div>
+          <Card className="p-5 text-center hover:shadow-xl hover:-translate-y-1 transition-all border-0 bg-gradient-to-br from-[#10B981] to-[#059669] group">
+            <div className="text-3xl font-bold text-white mb-1 group-hover:scale-110 transition-transform">100%</div>
+            <div className="text-sm text-white/80">On-Time Delivery</div>
           </Card>
-          <Card className="p-6 text-center hover:shadow-lg transition-all">
-            <div className="text-3xl font-bold text-primary mb-2">Zero</div>
-            <div className="text-sm text-muted-foreground">Major Incidents</div>
+          <Card className="p-5 text-center hover:shadow-xl hover:-translate-y-1 transition-all border-0 bg-gradient-to-br from-[#0F172A] to-[#334155] group">
+            <div className="text-3xl font-bold text-white mb-1 group-hover:scale-110 transition-transform">Zero</div>
+            <div className="text-sm text-white/80">Major Incidents</div>
           </Card>
         </div>
       </div>

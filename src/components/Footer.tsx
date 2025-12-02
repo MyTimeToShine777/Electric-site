@@ -1,4 +1,5 @@
 import { Separator } from '@/components/ui/separator'
+import { MapPin, Phone, Envelope } from '@phosphor-icons/react'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -32,33 +33,47 @@ export function Footer() {
   }
 
   return (
-    <footer className="bg-foreground text-background py-16">
+    <footer className="bg-[#0F172A] text-white py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-background text-foreground rounded-lg flex items-center justify-center">
-                <span className="font-bold text-xl">MPS</span>
+              <div className="w-10 h-10 bg-white text-[#0F172A] rounded-lg flex items-center justify-center">
+                <span className="font-bold text-lg">MPS</span>
               </div>
               <div>
-                <h3 className="font-bold text-lg leading-tight">MASS POWER SOLUTIONS</h3>
-                <p className="text-xs text-background/70">EHV Infrastructure</p>
+                <h3 className="font-bold text-base leading-tight">MASS POWER SOLUTIONS</h3>
+                <p className="text-xs text-white/60">EHV Infrastructure Specialists</p>
               </div>
             </div>
-            <p className="text-sm text-background/70 leading-relaxed">
+            <p className="text-sm text-white/70 leading-relaxed mb-4">
               Trusted EHV substation and transmission line contractor with 30 years of expertise. 
-              TNEB Class I certified, serving power utilities across Tamil Nadu and beyond.
+              TNEB Class I certified.
             </p>
+            <div className="space-y-2">
+              <div className="flex items-center gap-2 text-sm text-white/70">
+                <Phone size={14} className="text-[#3B82F6]" />
+                <span>+91 98765 43210</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-white/70">
+                <Envelope size={14} className="text-[#3B82F6]" />
+                <span>info@masspowersolutions.com</span>
+              </div>
+              <div className="flex items-start gap-2 text-sm text-white/70">
+                <MapPin size={14} className="text-[#3B82F6] mt-0.5 flex-shrink-0" />
+                <span>Chennai, Tamil Nadu, India</span>
+              </div>
+            </div>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Company</h4>
-            <ul className="space-y-3">
+            <h4 className="font-semibold mb-4 text-white">Company</h4>
+            <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
                   <button
                     onClick={() => scrollToSection(link.href)}
-                    className="text-sm text-background/70 hover:text-background transition-colors"
+                    className="text-sm text-white/60 hover:text-white transition-colors"
                   >
                     {link.label}
                   </button>
@@ -68,13 +83,13 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Capabilities</h4>
-            <ul className="space-y-3">
+            <h4 className="font-semibold mb-4 text-white">Capabilities</h4>
+            <ul className="space-y-2">
               {footerLinks.capabilities.map((link) => (
                 <li key={link.label}>
                   <button
                     onClick={() => scrollToSection(link.href)}
-                    className="text-sm text-background/70 hover:text-background transition-colors"
+                    className="text-sm text-white/60 hover:text-white transition-colors"
                   >
                     {link.label}
                   </button>
@@ -84,33 +99,27 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Support</h4>
-            <ul className="space-y-3">
-              {footerLinks.support.map((link) => (
-                <li key={link.label}>
-                  <button
-                    onClick={() => scrollToSection(link.href)}
-                    className="text-sm text-background/70 hover:text-background transition-colors"
-                  >
-                    {link.label}
-                  </button>
-                </li>
-              ))}
+            <h4 className="font-semibold mb-4 text-white">Certifications</h4>
+            <ul className="space-y-2">
+              <li className="text-sm text-white/60">TNEB Class I Contractor</li>
+              <li className="text-sm text-white/60">ESA Grade License (ESA:530)</li>
+              <li className="text-sm text-white/60">CMWSSB Class A&B</li>
+              <li className="text-sm text-white/60">ISO 9001:2015 Certified</li>
             </ul>
           </div>
         </div>
 
-        <Separator className="bg-background/20 mb-8" />
+        <Separator className="bg-white/10 mb-6" />
 
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-background/70">
+          <p className="text-sm text-white/50">
             © {currentYear} MASS POWER SOLUTIONS. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <button className="text-sm text-background/70 hover:text-background transition-colors">
+            <button className="text-sm text-white/50 hover:text-white transition-colors">
               Privacy Policy
             </button>
-            <button className="text-sm text-background/70 hover:text-background transition-colors">
+            <button className="text-sm text-white/50 hover:text-white transition-colors">
               Terms of Service
             </button>
           </div>
