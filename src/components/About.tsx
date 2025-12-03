@@ -144,7 +144,7 @@ export function About() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 items-start mb-6">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 items-start mb-6 overflow-hidden">
           <div ref={contentLeftRef} className="space-y-4 sm:space-y-6">
             <div className="relative rounded-xl overflow-hidden shadow-2xl ring-4 ring-white">
               <img 
@@ -191,22 +191,22 @@ export function About() {
             </div>
           </div>
 
-          <div ref={contentRightRef} className="grid gap-4 sm:gap-5" style={{ opacity: 1 }}>
+          <div ref={contentRightRef} className="grid gap-4 sm:gap-5 w-full max-w-full" style={{ opacity: 1 }}>
             {valuePropositions.map((item, index) => (
               <Card
                 key={item.title}
-                className={`p-3 sm:p-4 md:p-6 hover:shadow-xl transition-all duration-500 hover:-translate-y-1 border-0 bg-gradient-to-r ${item.color} group overflow-hidden`}
+                className={`p-3 sm:p-4 md:p-6 hover:shadow-xl transition-all duration-500 hover:-translate-y-1 border-0 bg-gradient-to-r ${item.color} group overflow-hidden w-full`}
                 style={{ opacity: 1 }}
               >
-                <div className="flex items-start gap-3">
-                  <div className="w-9 h-9 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-lg bg-white/15 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                    <item.icon size={18} className="text-white sm:hidden" weight="duotone" />
+                <div className="flex items-start gap-2 sm:gap-3 w-full">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-lg bg-white/15 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                    <item.icon size={16} className="text-white sm:hidden" weight="duotone" />
                     <item.icon size={22} className="text-white hidden sm:block md:hidden" weight="duotone" />
                     <item.icon size={24} className="text-white hidden md:block" weight="duotone" />
                   </div>
-                  <div className="flex-1 min-w-0">
-                    <h4 className="font-bold text-sm sm:text-base md:text-lg text-white mb-0.5 sm:mb-1">{item.title}</h4>
-                    <p className="text-white/80 text-xs sm:text-sm leading-relaxed break-words">{item.description}</p>
+                  <div className="flex-1 min-w-0 overflow-hidden">
+                    <h4 className="font-bold text-sm sm:text-base md:text-lg text-white mb-0.5 sm:mb-1 truncate sm:whitespace-normal">{item.title}</h4>
+                    <p className="text-white/80 text-xs sm:text-sm leading-relaxed break-words overflow-wrap-anywhere">{item.description}</p>
                   </div>
                 </div>
               </Card>

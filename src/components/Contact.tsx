@@ -156,7 +156,7 @@ export function Contact() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 mb-8">
+        <div className="grid lg:grid-cols-2 gap-8 mb-8 overflow-hidden">
           <div ref={formRef}>
             <Card className="p-6 border-0 bg-gradient-to-br from-[#F8FAFC] to-white shadow-xl">
               <h3 className="text-xl font-semibold text-[#0F172A] mb-5">Send us a Message</h3>
@@ -241,17 +241,18 @@ export function Contact() {
             </Card>
           </div>
 
-          <div ref={contactCardsRef} className="space-y-4" style={{ opacity: 1 }}>
+          <div ref={contactCardsRef} className="space-y-4 w-full max-w-full" style={{ opacity: 1 }}>
             {contactInfo.map((info, index) => (
-              <Card key={info.title} className={`p-4 sm:p-5 border-0 bg-gradient-to-r ${info.color} hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group overflow-hidden`} style={{ opacity: 1 }}>
-                <div className="flex items-start gap-3 sm:gap-4">
-                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-lg bg-white/15 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                    <info.icon size={20} className="text-white" weight="duotone" />
+              <Card key={info.title} className={`p-4 sm:p-5 border-0 bg-gradient-to-r ${info.color} hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group overflow-hidden w-full`} style={{ opacity: 1 }}>
+                <div className="flex items-start gap-2 sm:gap-4 w-full">
+                  <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-lg bg-white/15 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                    <info.icon size={18} className="text-white sm:hidden" weight="duotone" />
+                    <info.icon size={20} className="text-white hidden sm:block" weight="duotone" />
                   </div>
-                  <div className="flex-1 min-w-0">
+                  <div className="flex-1 min-w-0 overflow-hidden">
                     <h4 className="font-semibold text-white mb-1 text-sm sm:text-base">{info.title}</h4>
                     {info.details.map((detail) => (
-                      <p key={detail} className="text-xs sm:text-sm text-white/80 break-words">
+                      <p key={detail} className="text-xs sm:text-sm text-white/80 break-words overflow-wrap-anywhere truncate sm:whitespace-normal">
                         {detail}
                       </p>
                     ))}
