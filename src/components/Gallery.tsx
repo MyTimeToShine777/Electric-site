@@ -243,7 +243,7 @@ export function Gallery() {
   }
 
   return (
-    <section id="gallery" className="py-16 lg:py-20 bg-gradient-to-b from-white to-[#F8FAFC]">
+    <section id="gallery" className="py-16 lg:py-20 bg-gradient-to-b from-white to-[#F8FAFC] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div ref={titleRef} className="text-center mb-12">
           <span className="inline-block px-4 py-2 bg-[#3B82F6]/10 text-[#3B82F6] font-bold rounded-full text-sm mb-4">

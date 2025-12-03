@@ -15,7 +15,7 @@ import { Footer } from '@/components/Footer'
 
 function App() {
   return (
-    <div className="min-h-screen bg-background smooth-scroll">
+    <div className="min-h-screen bg-background smooth-scroll power-grid-pattern">
       <Toaster position="top-right" richColors />
       <Header />
       <main>
