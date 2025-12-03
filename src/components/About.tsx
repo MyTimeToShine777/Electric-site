@@ -100,7 +100,7 @@ export function About() {
       if (contentRightRef.current?.children) {
         gsap.from(contentRightRef.current.children, {
           opacity: 0,
-          x: 50,
+          y: 30,
           duration: 0.6,
           stagger: 0.12,
           ease: 'power2.out',

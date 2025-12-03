@@ -61,7 +61,7 @@ export function Contact() {
       if (contactCardsRef.current?.children) {
         gsap.from(contactCardsRef.current.children, {
           opacity: 0,
-          x: 50,
+          y: 30,
           duration: 0.6,
           stagger: 0.1,
           ease: 'power2.out',
