@@ -141,16 +141,16 @@ export function Contact() {
   ]
 
   return (
-    <section id="contact" className="py-12 sm:py-16 lg:py-20 bg-white relative overflow-hidden">
+    <section id="contact" className="py-16 lg:py-20 bg-white relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#3B82F6]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#F97316]/5 rounded-full blur-3xl"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div ref={titleRef} className="text-center mb-8 sm:mb-10">
+        <div ref={titleRef} className="text-center mb-10">
           <span className="inline-block px-4 py-2 bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#3B82F6]/25">Contact Us</span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0F172A] mb-3 sm:mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#0F172A] mb-4">
             Get in Touch with Us
           </h2>
-          <p className="text-sm sm:text-base text-[#64748B] max-w-3xl mx-auto">
+          <p className="text-base text-[#64748B] max-w-3xl mx-auto">
             Have a project inquiry or need technical consultation? Our team of experts is ready  
             to discuss your EHV substation and transmission line requirements.
           </p>
@@ -241,17 +241,29 @@ export function Contact() {
             </Card>
           </div>
 
-          <div ref={contactCardsRef} className="space-y-4" style={{ opacity: 1 }}>
+          <div ref={contactCardsRef} className="space-y-3 sm:space-y-4 w-full" style={{ opacity: 1 }}>
             {contactInfo.map((info, index) => (
-              <Card key={info.title} className={`p-4 sm:p-5 border-0 bg-gradient-to-r ${info.color} hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group overflow-hidden`} style={{ opacity: 1 }}>
-                <div className="flex items-start gap-3 sm:gap-4">
-                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-lg bg-white/15 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                    <info.icon size={20} className="text-white" weight="duotone" />
+<<<<<<< HEAD
+              <Card key={info.title} className={`p-3 sm:p-4 border-0 bg-gradient-to-r ${info.color} hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group w-full max-w-full`} style={{ opacity: 1 }}>
+                <div className="flex items-start gap-2 sm:gap-3 w-full">
+                  <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-white/15 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                    <info.icon size={18} className="text-white" weight="duotone" />
                   </div>
-                  <div className="flex-1 min-w-0">
-                    <h4 className="font-semibold text-white mb-1 text-sm sm:text-base">{info.title}</h4>
+                  <div className="flex-1 min-w-0 overflow-hidden">
+                    <h4 className="font-semibold text-white mb-0.5 sm:mb-1 text-sm">{info.title}</h4>
                     {info.details.map((detail) => (
-                      <p key={detail} className="text-xs sm:text-sm text-white/80 break-words">
+                      <p key={detail} className="text-xs text-white/80 truncate sm:whitespace-normal">
+=======
+              <Card key={info.title} className={`p-5 border-0 bg-gradient-to-r ${info.color} hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group`} style={{ opacity: 1 }}>
+                <div className="flex items-start gap-4">
+                  <div className="w-11 h-11 rounded-lg bg-white/15 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                    <info.icon size={22} className="text-white" weight="duotone" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-white mb-1">{info.title}</h4>
+                    {info.details.map((detail) => (
+                      <p key={detail} className="text-sm text-white/80">
+>>>>>>> parent of 9701a49 (responsive fix)
                         {detail}
                       </p>
                     ))}

@@ -86,14 +86,14 @@ export function Hero() {
               </div>
               
               {/* Main content */}
-              <div ref={contentRef} className="space-y-4 sm:space-y-6">
-                <h1 className="font-bold text-3xl sm:text-4xl lg:text-[3.5rem] leading-[1.15] tracking-tight text-[#0F172A]">
+              <div ref={contentRef} className="space-y-6">
+                <h1 className="font-bold text-4xl sm:text-5xl lg:text-[3.5rem] leading-[1.1] tracking-tight text-[#0F172A]">
                   EHV Substation &{' '}
                   <span className="text-[#3B82F6]">Transmission Line</span>{' '}
                   Specialists
                 </h1>
                 
-                <p className="text-base sm:text-lg text-[#64748B] leading-relaxed max-w-xl">
+                <p className="text-lg text-[#64748B] leading-relaxed max-w-xl">
                   MASS POWER SOLUTIONS - Your trusted partner for complete Design, Engineering, Procurement, 
                   Construction, Testing & Commissioning of EHV substations and transmission lines. TNEB Class I 
                   certified contractor with ESA Grade License (ESA:530).
@@ -113,7 +113,7 @@ export function Hero() {
                     variant="outline"
                     size="lg"
                     onClick={() => scrollToSection('contact')}
-                    className="border-2 border-[#0F172A] bg-white text-[#0F172A] h-12 px-8 text-base font-semibold transition-all hover:!bg-[#0F172A] hover:!text-white"
+                    className="border-2 border-[#E2E8F0] hover:border-[#0F172A] hover:bg-[#0F172A] hover:text-white text-[#0F172A] h-12 px-8 text-base font-semibold transition-all"
                   >
                     Get Quote
                   </Button>
@@ -121,22 +121,22 @@ export function Hero() {
               </div>
 
               {/* Stats */}
-              <div ref={statsRef} className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-6 sm:pt-8 border-t border-[#E2E8F0]">
+              <div ref={statsRef} className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-[#E2E8F0]">
                 <div className="space-y-1">
-                  <div className="text-2xl sm:text-3xl font-bold text-[#0F172A]">30+</div>
-                  <div className="text-xs sm:text-sm text-[#64748B]">Years Experience</div>
+                  <div className="text-3xl font-bold text-[#0F172A]">30+</div>
+                  <div className="text-sm text-[#64748B]">Years Experience</div>
                 </div>
                 <div className="space-y-1">
-                  <div className="text-2xl sm:text-3xl font-bold text-[#3B82F6]">300+</div>
-                  <div className="text-xs sm:text-sm text-[#64748B]">Team Members</div>
+                  <div className="text-3xl font-bold text-[#3B82F6]">300+</div>
+                  <div className="text-sm text-[#64748B]">Team Members</div>
                 </div>
                 <div className="space-y-1">
-                  <div className="text-2xl sm:text-3xl font-bold text-[#10B981]">100%</div>
-                  <div className="text-xs sm:text-sm text-[#64748B]">On-Time Delivery</div>
+                  <div className="text-3xl font-bold text-[#10B981]">100%</div>
+                  <div className="text-sm text-[#64748B]">On-Time Delivery</div>
                 </div>
                 <div className="space-y-1">
-                  <div className="text-2xl sm:text-3xl font-bold text-[#F97316]">TNEB</div>
-                  <div className="text-xs sm:text-sm text-[#64748B]">Class I Certified</div>
+                  <div className="text-3xl font-bold text-[#F97316]">TNEB</div>
+                  <div className="text-sm text-[#64748B]">Class I Certified</div>
                 </div>
               </div>
             </div>

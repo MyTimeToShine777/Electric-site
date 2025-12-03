@@ -289,7 +289,7 @@ export function TechnologyShowcase() {
             </div>
           </div>
 
-          <div className="hidden lg:block space-y-5">
+          <div className="space-y-5">
             <div>
               <h3 className="text-xl font-semibold text-[#0F172A] mb-3">Equipment Expertise</h3>
               <p className="text-[#64748B] leading-relaxed mb-5 text-sm">
@@ -332,35 +332,32 @@ export function TechnologyShowcase() {
           </div>
         </div>
 
-        <Card className="p-4 sm:p-6 lg:p-10 bg-[#F8FAFC] border border-[#E2E8F0]">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-6">
+        <Card className="p-6 lg:p-10 bg-[#F8FAFC] border border-[#E2E8F0]">
+          <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#3B82F6]/10 flex items-center justify-center mx-auto mb-2 sm:mb-3">
-                <Lightning size={24} className="text-[#3B82F6] sm:hidden" weight="duotone" />
-                <Lightning size={28} className="text-[#3B82F6] hidden sm:block" weight="duotone" />
+              <div className="w-14 h-14 rounded-full bg-[#3B82F6]/10 flex items-center justify-center mx-auto mb-3">
+                <Lightning size={28} className="text-[#3B82F6]" weight="duotone" />
               </div>
-              <h4 className="font-semibold text-[#0F172A] mb-1 text-sm sm:text-base">OEM Partnerships</h4>
-              <p className="text-xs sm:text-sm text-[#64748B]">
+              <h4 className="font-semibold text-[#0F172A] mb-1">OEM Partnerships</h4>
+              <p className="text-sm text-[#64748B]">
                 Authorized partners with leading global equipment manufacturers
               </p>
             </div>
             <div className="text-center">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#F97316]/10 flex items-center justify-center mx-auto mb-2 sm:mb-3">
-                <ShieldStar size={24} className="text-[#F97316] sm:hidden" weight="duotone" />
-                <ShieldStar size={28} className="text-[#F97316] hidden sm:block" weight="duotone" />
+              <div className="w-14 h-14 rounded-full bg-[#F97316]/10 flex items-center justify-center mx-auto mb-3">
+                <ShieldStar size={28} className="text-[#F97316]" weight="duotone" />
               </div>
-              <h4 className="font-semibold text-[#0F172A] mb-1 text-sm sm:text-base">Quality Assurance</h4>
-              <p className="text-xs sm:text-sm text-[#64748B]">
+              <h4 className="font-semibold text-[#0F172A] mb-1">Quality Assurance</h4>
+              <p className="text-sm text-[#64748B]">
                 Stringent quality checks and factory acceptance testing
               </p>
             </div>
             <div className="text-center">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#10B981]/10 flex items-center justify-center mx-auto mb-2 sm:mb-3">
-                <Gauge size={24} className="text-[#10B981] sm:hidden" weight="duotone" />
-                <Gauge size={28} className="text-[#10B981] hidden sm:block" weight="duotone" />
+              <div className="w-14 h-14 rounded-full bg-[#10B981]/10 flex items-center justify-center mx-auto mb-3">
+                <Gauge size={28} className="text-[#10B981]" weight="duotone" />
               </div>
-              <h4 className="font-semibold text-[#0F172A] mb-1 text-sm sm:text-base">Performance Testing</h4>
-              <p className="text-xs sm:text-sm text-[#64748B]">
+              <h4 className="font-semibold text-[#0F172A] mb-1">Performance Testing</h4>
+              <p className="text-sm text-[#64748B]">
                 Comprehensive site and commissioning tests as per standards
               </p>
             </div>

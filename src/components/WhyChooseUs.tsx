@@ -226,26 +226,27 @@ export function WhyChooseUs() {
   const currentAdvantage = advantages[currentIndex]
 
   return (
-    <section id="why-choose-us" className="py-12 sm:py-16 lg:py-20 bg-white relative overflow-hidden">
+    <section id="why-choose-us" className="py-16 lg:py-20 bg-white relative overflow-hidden">
       <div className="absolute top-0 left-0 w-1/2 h-1/2 bg-[#3B82F6]/5 rounded-full blur-[120px]"></div>
       <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-[#F97316]/5 rounded-full blur-[120px]"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div ref={titleRef} className="text-center mb-8 sm:mb-10">
+        <div ref={titleRef} className="text-center mb-10">
           <span className="inline-block px-4 py-2 text-sm font-bold text-[#3B82F6] bg-[#3B82F6]/10 rounded-full mb-4">Our Strengths</span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0F172A] mb-3 sm:mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#0F172A] mb-4">
             Why Choose MASS POWER SOLUTIONS?
           </h2>
-          <p className="text-sm sm:text-base text-[#64748B] max-w-3xl mx-auto">
+          <p className="text-base text-[#64748B] max-w-3xl mx-auto">
             Discover what makes us the preferred partner for power utilities and independent power 
-            producers across Tamil Nadu.
+            producers across Tamil Nadu. Our unique combination of experience, expertise, and commitment 
+            sets us apart.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 items-center mb-6 sm:mb-8">
+        <div className="grid lg:grid-cols-2 gap-8 items-center mb-8">
           <div ref={carouselRef} key={currentIndex}>
             <Card className={`overflow-hidden shadow-2xl border-0 bg-gradient-to-br ${currentAdvantage.color}`}>
-              <div className="relative h-56 sm:h-72">
+              <div className="relative h-72">
                 <div className="absolute inset-0 opacity-20">
                   <img
                     src={currentAdvantage.image}
@@ -255,37 +256,36 @@ export function WhyChooseUs() {
                 </div>
                 <div className="absolute top-0 right-0 w-40 h-40 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
                 <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2"></div>
-                <div className="absolute top-4 right-4">
-                  <span className="px-2 sm:px-3 py-1 text-xs font-semibold text-white bg-white/20 backdrop-blur-sm rounded-full border border-white/30">
+                <div className="absolute top-5 right-5">
+                  <span className="px-3 py-1 text-xs font-semibold text-white bg-white/20 backdrop-blur-sm rounded-full border border-white/30">
                     {currentAdvantage.subtitle}
                   </span>
                 </div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className={`w-20 h-20 sm:w-28 sm:h-28 rounded-full ${currentAdvantage.iconBg} flex items-center justify-center shadow-2xl ring-4 ring-white/20`}>
-                    <currentAdvantage.icon size={40} className="text-white sm:hidden" weight="duotone" />
-                    <currentAdvantage.icon size={56} className="text-white hidden sm:block" weight="duotone" />
+                  <div className={`w-28 h-28 rounded-full ${currentAdvantage.iconBg} flex items-center justify-center shadow-2xl ring-4 ring-white/20`}>
+                    <currentAdvantage.icon size={56} className="text-white" weight="duotone" />
                   </div>
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-5 bg-gradient-to-t from-black/40 to-transparent">
+                <div className="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-black/40 to-transparent">
                   <div className="flex items-end justify-between">
-                    <h3 className="text-lg sm:text-xl font-bold text-white">{currentAdvantage.title}</h3>
+                    <h3 className="text-xl font-bold text-white">{currentAdvantage.title}</h3>
                     <div className="text-right">
-                      <div className="text-xl sm:text-2xl font-bold text-white">{currentAdvantage.stats.value}</div>
+                      <div className="text-2xl font-bold text-white">{currentAdvantage.stats.value}</div>
                       <div className="text-xs text-white/80">{currentAdvantage.stats.label}</div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="p-4 sm:p-6 bg-white">
-                <p className="text-[#64748B] leading-relaxed mb-4 sm:mb-5 text-sm">
+              <div className="p-6 bg-white">
+                <p className="text-[#64748B] leading-relaxed mb-5 text-sm">
                   {currentAdvantage.description}
                 </p>
                 <div className="space-y-2">
                   <h4 className="font-semibold text-sm text-[#0F172A] mb-2">Key Highlights:</h4>
                   {currentAdvantage.highlights.map((highlight, idx) => (
                     <div key={idx} className="flex items-start gap-2">
-                      <CheckCircle className="text-[#10B981] flex-shrink-0 mt-0.5" size={16} weight="fill" />
-                      <span className="text-xs sm:text-sm text-[#0F172A]">{highlight}</span>
+                      <CheckCircle className="text-[#10B981] flex-shrink-0 mt-0.5" size={18} weight="fill" />
+                      <span className="text-sm text-[#0F172A]">{highlight}</span>
                     </div>
                   ))}
                 </div>
